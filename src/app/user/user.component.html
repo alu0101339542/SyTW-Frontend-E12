@@ -1,0 +1,7 @@
+<h1 class="container text-center">User Main component</h1>
+
+<pre class="container-lg bg-secondary bg-gradient text-white p-3" >
+    {{ users | json }}
+</pre>
+
+<app-user-new class="container text-center" (createNewUserEvent)="set_user($event)" ></app-user-new>
